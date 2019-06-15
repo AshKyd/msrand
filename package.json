@@ -13,7 +13,7 @@
     "test": "npm run build && mocha test/**"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "mocha": "^6.1.4",
     "parcel": "^1.12.3"
