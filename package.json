@@ -1,0 +1,24 @@
+{
+  "name": "msrand",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "parcel build --no-source-maps src/msrand.js",
+    "prepublish": "npm run build",
+    "test": "npm run build && mocha test/**"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^6.1.4",
+    "parcel": "^1.12.3"
+  },
+  "files": [
+    "dist/msrand.js"
+  ]
+}
