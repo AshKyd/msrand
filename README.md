@@ -28,17 +28,22 @@ npm i msrand
 
 ## Usage <a name = "usage"></a>
 
-Import and create an instance of the rng with an optional seed to begin. If no seed is specified it defaults to 0.
+Import msrand using your syntax of choice:
 
 ```
-const MSRand = require("msrand");
+// es6 syntax
+import MSRand from msrand;
 
+// or commonjs syntax
+const MSRand = require('msrand').default;
+```
+
+Then create an instance with an optional seed. If no seed is specified it defaults to 0.
+
+```
 // Create an instance of the random number generator, with a given seed.
 const myrng = new MSRand(123);
-
 ```
-
-There are two methods on the rng instance.
 
 To fetch a random number between 0 and 32,767:
 
@@ -47,9 +52,9 @@ To fetch a random number between 0 and 32,767:
 myrng.rand();
 ```
 
-To fetch a random number between 0 and a desired amount:
+To fetch a random number between 0 and a specified amount:
 
 ```
-// Return a random number with a max of 10
+// Return a random number from 0-9
 myrng.randMax(10);
 ```
