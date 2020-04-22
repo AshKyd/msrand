@@ -4,6 +4,7 @@
   "description": "",
   "main": "dist/msrand.js",
   "type": "module",
+  "repository": "github:ashkyd/msrand",
   "directories": {
     "test": "test"
   },
@@ -14,11 +15,12 @@
   },
   "author": "",
   "license": "MIT",
-  "devDependencies": {
-    "mocha": "^6.1.4",
-    "parcel": "^1.12.3"
-  },
+  "devDependencies": {},
   "files": [
     "dist/msrand.js"
-  ]
+  ],
+  "dependencies": {
+    "mocha": "^7.1.1",
+    "parcel": "^1.12.4"
+  }
 }
