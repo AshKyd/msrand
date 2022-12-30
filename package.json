@@ -20,7 +20,7 @@
     "dist/msrand.js"
   ],
   "dependencies": {
-    "mocha": "^7.1.1",
+    "mocha": "^10.2.0",
     "parcel": "^1.12.4"
   }
 }
