@@ -2,25 +2,26 @@
   "name": "msrand",
   "version": "1.0.3",
   "description": "",
-  "main": "dist/msrand.js",
+  "main": "lib/msrand.js",
   "type": "module",
   "repository": "github:ashkyd/msrand",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "build": "parcel build --no-source-maps src/msrand.js",
-    "prepublish": "npm run build",
-    "test": "npm run build && mocha test/**"
+    "test": "mocha test/**"
   },
   "author": "",
   "license": "MIT",
-  "devDependencies": {},
+  "devDependencies": {
+    "mocha": "^10.8.2"
+  },
   "files": [
-    "dist/msrand.js"
+    "lib/msrand.js",
+    "README.md",
+    "LICENSE"
   ],
   "dependencies": {
-    "mocha": "^7.1.1",
-    "parcel": "^1.12.4"
+    "string-hash": "^1.1.3"
   }
 }

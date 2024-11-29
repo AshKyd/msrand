@@ -1,5 +1,5 @@
-const assert = require("assert");
-const MSRand = require("../dist/msrand.js").default;
+import assert from "assert";
+import MSRand from "../lib/msrand.js";
 
 function getNumbers({ seed, count = 10 }) {
   const msrand = new MSRand(seed);
